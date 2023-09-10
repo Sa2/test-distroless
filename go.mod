@@ -1,3 +1,3 @@
 module Sa2/test-distroless
 
-go 1.19
+go 1.21

@@ -17,4 +17,6 @@ FROM gcr.io/distroless/static-debian12:nonroot AS production
 ENV TZ=Asia/Tokyo
 
 COPY --from=build /go/src/test-distroless/bin /
-CMD ["/test-distroless"]
+WORKDIR /
+
+CMD ["./test-distroless"]
