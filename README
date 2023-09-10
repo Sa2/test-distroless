@@ -1,0 +1,17 @@
+# test-distroless
+
+distroless でデプロイの実験
+
+
+## ビルド
+
+```sh
+$ docker build --target production -t test-distroless:latest .
+```
+
+## 実行
+
+```sh
+$ docker run --rm test-distroless:latest
+```
+
